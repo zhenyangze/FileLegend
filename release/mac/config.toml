@@ -1,0 +1,11 @@
+pidpath ="/tmp/filelegend.pid"
+#如果匹配不到是否要删除掉
+isforce = "0"
+showlog = "1"
+[items]
+    [[items.node]]
+        rootdir = "/storage/framework/cache/data/"
+        reg     = "^(\\d{10})"
+    [[items.node]]
+        rootdir = "/public/page-cache"
+        reg     = "<!--\\((\\d{10})\\)-->"
